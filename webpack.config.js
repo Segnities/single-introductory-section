@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
+  devtool: "source-map",
   entry: { main: "./src/assets/js/index.js" },
   output: {
     path: path.resolve(__dirname, "./dist"),
@@ -12,15 +13,16 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(css|scss|sass)$/,
-        use: ["style-loader", "css-loader", "sass-loader"],
+        test: /\.(less)$/,
+        use: ["style-loader", "css-loader", "less-loader"],
       },
       {
         test: /\.(png|svg|jpe?g|gif)$/,
-        loader: "file-loader",
+        type: "asset/resource",
+        /* loader: "url-loader",
         options: {
-          name: './assets/img/[name].[ext]'
-        }
+          name: "./assets/img/[name].[ext]",
+        }, */
       },
     ],
   },
