@@ -51,7 +51,7 @@
 }
 
 
-@media (max-width: 1200px) {
+@media (max-width: 1245px) {
   .content {
     padding: 0;
     flex-direction: column;
@@ -87,13 +87,17 @@
   }
 
   .advertisment-trap-footer {
-    align-self: center;
+    align-self: flex-start;
   }
 }
 
 @media (max-width: 600px) {
   .mockups {
     transform: scale(0.66);
+    transition: all 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+   .advertisment-trap-footer {
+    align-self: center;
   }
 }
 
