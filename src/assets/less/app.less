@@ -3,6 +3,7 @@
 @import "./header.less";
 @import "./content.less";
 @import "./self.less";
+@import "./footer.less";
 
 * {
   margin: 0;
@@ -21,31 +22,34 @@
   background-size: cover;
   padding-top: 50px;
   padding-left: 75px;
-  padding-right: 60px;
+  padding-right: 175px;
   transition: all 0.2s ease-out;
 }
 
-
 @media (max-width: 1245px) {
-    .app {
-        padding: 40px;
-    }
+  .app {
+    padding: 40px;
+    transition: all 0.3s ease-out;
+  }
 }
 
 @media (max-width: 720px) {
-    .app {
-        padding: 20px;
-    }
+  .app {
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+  }
 }
 
 @media (max-width: 560px) {
   .app {
     padding: 10px;
+    transition: all 0.3s ease-in-out;
   }
 }
 
 @media (max-width: 345px) {
   .app {
     padding: 0;
+    transition: all 0.3s ease-in-out;
   }
 }

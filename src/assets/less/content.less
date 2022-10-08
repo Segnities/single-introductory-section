@@ -2,8 +2,8 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  padding-top: 75px;
-  padding-left: 15px;
+  padding-top: 30px;
+  padding-left: 50px;
   flex-shrink: 1;
   flex-grow: 1;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
@@ -15,30 +15,35 @@
   display: flex;
   flex-direction: column;
   color: #fff;
-  padding-left: 55px;
-  padding-top: 50px;
+  padding-left: 15px;
+  padding-top: 65px;
+}
+
+.mockups svg {
+  transform: scale(0.9);
 }
 
 .advertisment-trap-header {
-  font-size: 26px;
+  font-size: 24px;
   letter-spacing: 1px;
 }
 
 .advertisment-trap-body {
   margin-top: 30px;
-  font-size: 19px;
+  line-height: 25px;
+  font-size: 16px;
 }
 
 .advertisment-trap-footer {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .register-btn {
-  width: 200px;
-  padding: 15px;
+  width: 180px;
+  padding: 13px;
   background-color: #fff;
-  font-size: 18px;
-  color: #000;
+  font-size: 16px;
+  color: hsl(257, 40%, 49%);
   border-radius: 30px;
   outline: none;
   border: none;
@@ -128,5 +133,17 @@
   }
   .mockups svg {
     transform: scale(1);
+  }
+}
+
+@media (max-width: 320px) {
+  .mockups {
+    transform: scale(0.35);
+  }
+  .advertisment-trap-header {
+    font-size: 16px;
+  }
+  .advertisment-trap-body {
+    font-size: 12px;
   }
 }
