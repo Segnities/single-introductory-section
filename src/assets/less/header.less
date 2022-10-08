@@ -1,6 +1,22 @@
 header {
     width: 100%;
+    position: relative;
+    bottom: 8px;
+    right: 3px;
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
     z-index: 5;
+    padding-left: 60px;
+    
+    svg {
+        transform: scale(0.82);
+    }
+}
+
+@media (max-width: 720px) {
+    header {
+        bottom: 0;
+        right: 0;
+        padding: 0;
+    }
 }
 
